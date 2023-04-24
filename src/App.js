@@ -6,14 +6,22 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 
+// components
+import Header from './component/Header/Header';
+import Footer from './component/Footer/Footer';
+
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Routes>
-          <Route exact path="/" element={<Home/>}/>
-          <Route path="/about" element={<About/>}/>
-        </Routes>
+        <Header/>
+          <div className='container'>
+            <Routes>
+              <Route exact path="/" element={<Home/>}/>
+              <Route path="/about" element={<About/>}/>
+            </Routes>
+          </div>
+        <Footer/>
       </BrowserRouter>
     </div>
   );
