@@ -6,6 +6,7 @@ const Register = () => {
             <h2>
                 Register
             </h2>
+            <p>Crie seu usuário e comece a publicar!</p>
             <form>
                 <label>
                     <span>Nome: </span>
