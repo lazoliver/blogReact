@@ -1,0 +1,25 @@
+.register{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 450px;
+}
+input{
+    display: inherit;
+    margin-top: .5em;
+    padding: 5px;
+    width: 100%;
+}
+.btn{
+    background-color: #000;
+    border-radius: 25px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10px 0;
+}
