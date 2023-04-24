@@ -9,6 +9,8 @@ import About from "./pages/About/About";
 // components
 import Header from './component/Header/Header';
 import Footer from './component/Footer/Footer';
+import Login from './pages/Login/Login';
+import Register from './pages/Register/Register';
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
           <div className='container'>
             <Routes>
               <Route exact path="/" element={<Home/>}/>
+              <Route path="/login" element={<Login/>} />
+              <Route path="/register" element={<Register/>} />
               <Route path="/about" element={<About/>}/>
             </Routes>
           </div>

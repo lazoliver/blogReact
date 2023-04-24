@@ -1,3 +1,7 @@
+.App{
+    padding-top: 80px;
+}
+.App > div.container{height: 90vh;}
 .container{
     margin: 0 auto;
     max-width: 1040px;
