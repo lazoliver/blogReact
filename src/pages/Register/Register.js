@@ -9,7 +9,7 @@ const Register = () => {
     const [error, setError] = useState("");
 
     const handleSubmit= (e) => {
-        email.preventDefault();
+        e.preventDefault();
 
         setError("");
 
