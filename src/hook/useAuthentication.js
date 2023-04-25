@@ -10,7 +10,7 @@ import {
 
 import { useState, useEffect } from "react";
 
-export const useAuthentication = () =>{
+export const useAuthentication = () => {
     const [error, setError] = useState(null);
     const [loading, setLoading] = useState(null);
 
@@ -33,11 +33,11 @@ export const useAuthentication = () =>{
         setError(null);
 
         try {
-            const {user} = createUserWithEmailAndPassword(
+            const {user} = await createUserWithEmailAndPassword(
                 auth,
                 data.email,
                 data.password
-            );
+            )
 
             await updateProfile(user, {
                 displayName: data.displayName,
