@@ -1,0 +1,22 @@
+.createPost{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+p{margin: 1em 0;}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 450px;
+}
+input{
+    display: inherit;
+    margin-top: .5em;
+    padding: 5px;
+    width: 100%;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+}
