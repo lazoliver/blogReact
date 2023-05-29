@@ -2,6 +2,7 @@ import './App.css';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
+// autenticação
 import { onAuthStateChanged } from 'firebase/auth';
 
 // hooks
@@ -14,6 +15,8 @@ import { AuthProvider } from './context/AuthContext';
 // pages
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
+import CreatePost from './pages/CreatePost/CreatePost';
+import Dashboard from './pages/Dashboard/Dashboard';
 
 // components
 import Header from './component/Header/Header';
@@ -40,7 +43,7 @@ function App() {
 
   return (
     <div className="App">
-      <AuthProvider>
+      <AuthProvider value={{ user }}>
         <BrowserRouter>
           <Header/>
             <div className='container'>
@@ -49,6 +52,8 @@ function App() {
                 <Route path="/login" element={<Login/>} />
                 <Route path="/register" element={<Register/>} />
                 <Route path="/about" element={<About/>}/>
+                <Route path="/posts/create" element={<CreatePost/>} />
+                <Route path="/dashboard" element={<Dashboard/>} />
               </Routes>
             </div>
           <Footer/>

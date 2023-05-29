@@ -7,7 +7,7 @@
     display: flex;
     justify-content: center;
     padding: 5px 15px;
-    width: 70px;
+    width: 100px;
 }
 .nav .active{
     background-color: #000;
