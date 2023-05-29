@@ -66,6 +66,7 @@ const CreatePost = () => {
                         value={tags}
                     />
                 </label>
+                <button className="btn">Publicar</button>
                 {/* {!loading && <button className="btn">Registrar-se</button>}
                 {loading && (
                         <button className="btn" disabled>
