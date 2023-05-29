@@ -10,6 +10,8 @@ const NavBar = () => {
 
     const {user} = useAuthValue();
 
+    const {logout} = useAuthentication();
+
     return <nav className="nav">
         <NavLink to="/">Home</NavLink>
         {!user && (
@@ -25,6 +27,11 @@ const NavBar = () => {
             </>
         )}
         <NavLink to="/about">About</NavLink>
+        {user && (
+            <>
+                <NavLink onClick={logout}>Sair</NavLink>
+            </>
+        )}
     </nav>
 }
 export default NavBar;
