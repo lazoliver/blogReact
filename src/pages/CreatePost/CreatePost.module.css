@@ -10,7 +10,7 @@ form{
     gap: 1em;
     width: 450px;
 }
-input{
+input, textarea{
     display: inherit;
     margin-top: .5em;
     padding: 5px;
